@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+  background: radial-gradient(circle at top, rgba(0, 255, 140, 0.08), transparent 32%),
+    #05070b;
+  color: #e5e7eb;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-glow {
+  @apply rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glow;
+}
+
+.badge-safe {
+  @apply text-[#00ff8c] bg-[#00ff8c]/10 border border-[#00ff8c]/20;
+}
+
+.badge-blocked {
+  @apply text-[#ff3d6d] bg-[#ff3d6d]/10 border border-[#ff3d6d]/20;
+}
